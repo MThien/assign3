@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <title>basic login</title>
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <link href="style2.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-secondary" style="padding-top: 5rem; padding-bottom: 5rem;">
+
+  <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <div class="row">
+          <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div class="text-center">
+                <img src="pink capsule.png" width="80px" style="padding-bottom:10px">
+            
+                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+              </div>
+              <form class="user" id="signup-form">
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="signup-firstname" placeholder="First Name">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-user" id="signup-lastname" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-user" id="signup-email" placeholder="Email Address">
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" class="form-control form-control-user" id="signup-password" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="text-success text-center" id="success"></div>
+                <div class="text-danger text-center" id="error"></div>
+
+                <button class="btn btn-primary btn-user btn-block" type="submit">
+                  Register Account
+                </button>
+                <hr>
+                <a href="home.html" class="btn btn-google btn-user btn-block">
+                  <i class="fab fa-google fa-fw"></i> Sign In
+                </a>
+              </form>
+              <hr>
+              <div class="text-center">
+                <a class="small" href="">Already have an account? Sign In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- Custon Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin-2.min.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyDkZZSWINf_4WhBwlQJNqRfvPA151VpzOg",
+    authDomain: "capsule-270f9.firebaseapp.com",
+    databaseURL: "https://capsule-270f9.firebaseio.com",
+    projectId: "capsule-270f9",
+    storageBucket: "capsule-270f9.appspot.com",
+    messagingSenderId: "444347049662",
+    appId: "1:444347049662:web:a05519e3d7d3a89070a0ef",
+    measurementId: "G-JKRKMHS5J5"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    //Make auth and realtime references
+    var auth = firebase.auth();
+    var db = firebase.database()
+  </script>
+
+  <!-- Run Personal Script -->
+  <script type="text/javascript" src="signup.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>
+
+
+</body>
+
+</html>
